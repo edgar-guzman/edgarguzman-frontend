@@ -9,6 +9,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "exp": "yarn add express && yarn start",
+    "dev": "nodemon index.js",
     "start": "node index.js"
   },
   "repository": {

@@ -1,5 +1,8 @@
 node_modules/
 .DS_Store
 config/configuration.js
+config/configuration.env
+config/configuration.json
+config/configuration.yaml
 package-lock.json
 yarn.lock

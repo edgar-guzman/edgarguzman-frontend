@@ -1,10 +1,9 @@
-const booker = require('express').Router();
+const pager = require('express').Router();
+const pageController = require('../controllers');
 
-booker
+pager
   .route('/')
-  .get((req, res) => {
-    res.send('Get all books');
-  })
+  .get(pageController.getIndex)
   .post((req, res) => {
     res.status(405).send('Not allow to add a book');
   })
@@ -15,7 +14,7 @@ booker
     res.status(405).send('Not allow to delete a book');
   });
 
-booker
+pager
   .route('/:id')
   .get((req, res) => {
     const id = req.params.id;
@@ -33,4 +32,4 @@ booker
     res.send('Deleted this book, URL: /' + id);
   });
 
-module.exports = booker;
+module.exports = pager;
