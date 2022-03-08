@@ -4,34 +4,15 @@ const shopController = require('../controllers');
 shopper
   .route('/')
   .get(shopController.getShop)
-  .post((req, res) => {
-    res.status(405).send('Not allowed when adding a book');
-  })
-  .put((req, res) => {
-    res.status(405).send('Not allowed when updating a book');
-  })
-  .delete((req, res) => {
-    res.status(405).send('Not allowed when deleting a book');
-  });
+  .post(shopController.postShop)
+  .put(shopController.putShop)
+  .delete(shopController.deleteShop);
 
 shopper
   .route('/:id')
-  .get((req, res) => {
-    const id = req.params.id;
-    res.send('Get a board ID, URL: /' + id);
-  })
-  .post((req, res) => {
-    res
-      .status(405)
-      .send('Not allow when adding a board ID within a existing board ID');
-  })
-  .put((req, res) => {
-    const id = req.params.id;
-    res.send('Updated this board ID, URL: /' + id);
-  })
-  .delete((req, res) => {
-    const id = req.params.id;
-    res.send('Deleted this board ID, URL: /' + id);
-  });
+  .get(shopController.getShopId)
+  .post(shopController.postShopId)
+  .put(shopController.putShopId)
+  .delete(shopController.deleteShopId);
 
 module.exports = shopper;

@@ -1,10 +1,10 @@
 const express = require('express');
-const routes = require('./routes');
-const HOSTNAME = 'localhost';
+const config = require('./config');
+let HOSTNAME = config.env.HOSTNAME;
+let PORT = config.env.PORT;
 const app = express();
-const PORT = 3000;
 
-app.use(routes);
+app.use(config.middl);
 
 app.listen(PORT, () => {
   console.log(`🚀🗜  @ http://${HOSTNAME}:${PORT}/`);

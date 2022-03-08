@@ -1,19 +1,21 @@
 // controllers
-const { getIndex, getAbout, getContact } = require('./pagerController');
-const {
-  getShop,
-  postShop,
-  putShop,
-  getShopId,
-} = require('./shopperController');
+const { getIndex, getAbout, getContact, postContact, putContact, deleteContact } = require('./pagerController');
+const { getShop, postShop, putShop, deleteShop, getShopId, postShopId, putShopId, deleteShopId } = require('./shopperController');
 
 module.exports = {
-  getIndex,
-  getAbout,
-  getContact,
+    getIndex,
+    getAbout,
+    getContact,
+    postContact,
+    putContact,
+    deleteContact,
 
-  getShop,
-  postShop,
-  putShop,
-  getShopId,
+    getShop,
+    postShop,
+    putShop,
+    deleteShop,
+    getShopId,
+    postShopId,
+    putShopId,
+    deleteShopId,
 };
