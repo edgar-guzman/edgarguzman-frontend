@@ -12,10 +12,15 @@ const pagfig = {
         ABOUT: 'pages/about',
         CONTACT: 'pages/contact',
 
-        // // res.render();
+        // res.render();
         SHOP: 'shop/index',
         SHOP_ID: 'shop/shopID',
-        // CONTACT: 'pages/contact',
+        ADD_TO_CART: 'shop/cart',
+
+        // res.rest();
+        CONTACT_POST: 'Not allow to add a contact request',
+        CONTACT_PUT: 'Not allow to update a contact request',
+        CONTACT_DELETE: 'Not allow to delete a contact request',
 
         // res.rest();
         REST_POST: 'Not allow to add a board',

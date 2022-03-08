@@ -1,5 +1,5 @@
 const shopper = require('express').Router();
-const shopController = require('../controllers');
+const shopController = require('../../controllers');
 
 shopper.route('/').get(shopController.getShop).post(shopController.postShop).put(shopController.putShop).delete(shopController.deleteShop);
 

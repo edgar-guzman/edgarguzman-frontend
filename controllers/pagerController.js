@@ -2,7 +2,8 @@
 const config = require('../config/configuration');
 
 const getIndex = (req, res) => {
-    res.send(config.env.RENDER_PAGES.HOMEPAGE);
+    // res.send(config.env.RENDER_PAGES.HOMEPAGE);
+    res.render(config.env.RENDER_PAGES.HOMEPAGE);
 };
 
 const getAbout = (req, res) => {

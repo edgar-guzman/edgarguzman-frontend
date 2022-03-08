@@ -1,5 +1,5 @@
 // pageController : getShop, postShop, putShop, deleteShop, getShopId, postShopId, putShopId, deleteShopId;
-const config = require('../config');
+const config = require('../../config');
 
 const getShop = (req, res) => {
     res.send('Get all boards');
