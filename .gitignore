@@ -6,3 +6,6 @@ config/configuration.json
 config/configuration.yaml
 package-lock.json
 yarn.lock
+
+url copy.json
+url.json

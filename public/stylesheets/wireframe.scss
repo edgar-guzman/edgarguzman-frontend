@@ -1,0 +1,87 @@
+:root {
+    --black: #000000;
+    --yellow: #ffff00;
+    --white: #ffffff;
+    --inherit: inherit;
+
+    --color: var(--white);
+    --border: var(--inherit);
+    --background: var(--black);
+}
+
+*,
+*::before,
+*::after {
+    border: 0;
+    outline: 0;
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+
+    color: inherit;
+    border-color: inherit;
+    background-color: inherit;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img,
+svg,
+picture,
+canvas,
+video {
+    display: block;
+}
+
+hr,
+input,
+textarea,
+button {
+    border: 0.0625rem solid;
+}
+
+abbr {
+    border: 0.0625rem dotted;
+}
+
+br {
+    content: ' ';
+}
+
+a {
+    color: var(--yellow);
+    text-decoration-style: none;
+    text-decoration-color: var(--yellow);
+}
+
+a:hover {
+    color: var(--yellow);
+    text-decoration-style: underline;
+    text-decoration-color: var(--yellow);
+}
+
+q {
+    quotes: '‘' '’';
+}
+
+a::before {
+    content: open-quote;
+}
+
+a::after {
+    content: close-quote;
+}
+
+#modular,
+.modular {
+    color: var(--color);
+    background-color: var(--background);
+    // text-decoration-color: var(--yellow);
+}
