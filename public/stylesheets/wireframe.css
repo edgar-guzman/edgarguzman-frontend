@@ -1,0 +1,238 @@
+:root {
+    /* --border: 0; */
+    /* --outline: 0; */
+    /* --margin: 0 0; */
+    /* --padding: 0 0; */
+    /* --box-sizing: border-box; */
+
+    --gutter: 0 0;
+    --black: #000000;
+    --yellow: #ffff00;
+    --white: #ffffff;
+    --inherit: inherit;
+    /* --box-sizing: border-box; */
+
+    --color: var(--white);
+    --border: inherit;
+    --background: var(--black);
+    --highlight: var(--yellow);
+}
+
+*,
+*::before,
+*::after,
+::selection,
+html,
+body,
+header,
+section,
+fieldset,
+blockquote,
+img,
+svg,
+picture,
+canvas,
+video,
+audio,
+figcaption,
+caption,
+a,
+p,
+q,
+br,
+hr,
+span,
+input,
+textarea,
+button {
+    border: 0;
+    outline: 0;
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+
+    color: inherit;
+    border-color: inherit;
+    background-color: inherit;
+}
+
+/* *,
+*::before,
+*::after {
+} */
+
+::selection {
+    color: var(--black);
+    background-color: var(--highlight);
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header {
+} */
+
+/* section {
+} */
+
+hr,
+input,
+textarea,
+button {
+	font-size: 100%;
+    border: 0.0625rem solid var(--white);
+}
+
+input[type="password"] {
+  letter-spacing: 0.0625rem;
+  font: large Verdana,sans-serif;
+ }
+
+/* button,
+fieldset {
+    border: 0.0625rem solid var(--white);
+} */
+
+h1 {
+	margin: 0 0 1.25rem;
+}
+
+.alink {
+	margin: 1.25rem 0 1.25rem;
+	background-color: transparent;
+	text-underline-offset: 0.375rem;
+	text-decoration-thickness: 0.125rem;
+}
+
+.alink:hover {
+	cursor: pointer;
+    color: var(--highlight);
+	text-decoration-style: solid;
+	background-color: transparent;
+	text-decoration-line: underline;
+	text-underline-offset: 0.375rem;
+	text-decoration-thickness: 0.125rem;
+	text-decoration-color: var(--highlight);
+}
+
+a {
+	cursor: default;
+    color: var(--inherit);
+	text-decoration-style: solid;
+	text-decoration-line: underline;
+	text-underline-offset: 0.375rem;
+	text-decoration-thickness: 0.125rem;
+	text-decoration-color: var(--highlight);
+}
+
+a:hover {
+	cursor: pointer;
+    /* color: var(--highlight); */
+	text-decoration-style: solid;
+	text-decoration-line: underline;
+	text-underline-offset: 0.375rem;
+	text-decoration-thickness: 0.125rem;
+	text-decoration-color: var(--highlight);
+}
+
+button {
+	cursor: default;
+	font-size: 1rem;
+	font-weight: 600;
+    /* padding: 1.25rem 72px; */
+    padding: 1.25rem 4.5rem;
+    /* border-radius: 0.125rem; */
+    /* border-radius: 1.25rem; */
+    border-radius: 0.75rem;
+    /* border: 0.0625rem solid var(--white); */
+
+	/* display: flex;
+align-items: center;
+justify-content: center; */
+}
+
+button:hover {
+	cursor: pointer;
+	color: var(--black);
+	background-color: var(--yellow);
+    border: 0.0625rem solid var(--yellow);
+}
+
+/* span {
+} */
+
+/* Customization */
+
+#modular,
+.modular {
+    color: var(--color);
+    background-color: var(--background);
+}
+
+#guzman,
+.guzman {
+    cursor: default;
+    color: var(--white);
+    /* background-color: var(--background); */
+
+    text-decoration-line: none;
+    text-decoration-color: var(--inherit);
+}
+
+#guzman:hover,
+.guzman:hover {
+    cursor: pointer;
+    color: var(--inherit);
+
+    text-decoration-line: none;
+    text-decoration-color: var(--inherit);
+}
+
+#grid-layout,
+.grid-layout {
+    height: 100vh;
+	gap: var(--gutter);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3.125rem 100vh 3.125rem;
+
+    /* text-decoration-line: none;
+    text-decoration-color: var(--inherit); */
+
+	margin: 0 3.125rem;
+}
+
+#height-100,
+.height-100 {
+    height: 100%;
+}
+
+#flex,
+.flex {
+    display: flex;
+}
+
+#align-center,
+.align-center {
+    align-items: center;
+}
+
+#justify-center,
+.justify-center {
+    justify-content: center;
+}
+
+.border-1 {
+	border: 0.0625rem solid;
+}
+
+.paragraph {
+	/* line-height: 0.1rem; */
+	line-height: 1.6;
+}
